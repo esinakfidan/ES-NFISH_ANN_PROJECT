@@ -18,10 +18,10 @@ Bu proje, çeşitli balık türlerini tanımlamak için derin öğrenme modeller
 - `pandas`, `numpy`
 
 ## Kullanılan Teknikler ve Modeller
-Bu projede, görüntü sınıflandırma için transfer öğrenme yaklaşımını kullanarak VGG16 modelini uyguladık. Aşağıda kullanılan temel teknikler ve modellerin açıklamaları bulunmaktadır:
+Bu projede, görüntü sınıflandırma için transfer öğrenme yaklaşımını kullanarak VGG16 modeli uygulandı. Aşağıda kullanılan temel teknikler ve modellerin açıklamaları bulunmaktadır:
 
 1. **Transfer Öğrenme:**
-   - Önceden eğitilmiş VGG16 modelini kullanarak, daha az veriye ihtiyaç duyarak ve daha hızlı bir şekilde modelimizi eğittik. Bu, özellikle sınırlı veri setlerinde etkili bir yöntemdir.
+   - Önceden eğitilmiş VGG16 modelini kullanarak, daha az veriye ihtiyaç duyarak ve daha hızlı bir şekilde modelimizi eğitildi. Bu, özellikle sınırlı veri setlerinde etkili bir yöntemdir.
 
 2. **VGG16 Modeli:**
    - VGG16, ImageNet veriseti üzerinde eğitilmiş bir konvolüsyonel sinir ağıdır. Derin mimarisi sayesinde yüksek doğruluk oranlarına ulaşabilmekte. Bu projede, VGG16'nın temel özelliklerini kullanarak özel bir sınıflandırma problemi çözmeyi hedeflendi.
@@ -30,12 +30,12 @@ Bu projede, görüntü sınıflandırma için transfer öğrenme yaklaşımını
    - Modelin genel performansını artırmak için görüntülerin dönmesi, kaydırılması, kesilmesi ve diğer dönüşümleri ile veri artırma işlemleri gerçekleştirildi. Bu sayede modelin aşırı öğrenmesini (overfitting) engellemeyi amaçlandı.
 
 4. **Yapay Sinir Ağı (Artificial Neural Network - ANN):**
-   - VGG16 modelinin çıkış katmanının üzerine, görüntü sınıflandırma için tam bağlı (dense) katmanlar eklendi. Bu katmanlar, modelin öğrendiği özellikleri kullanarak son sınıflandırmayı gerçekleştirir.
+   - VGG16 modelinin çıkış katmanının üzerine, görüntü sınıflandırma için tam bağlı (dense) katmanlar eklendi. Bu katmanlar, modelin öğrendiği özellikleri kullanarak son sınıflandırmayı gerçekleştirildi.
 
 5. **Eğitim Süreci:**
    - Modeli, kayıp fonksiyonu olarak "binary_crossentropy" kullanarak ve doğruluk metriği ile eğitildi. Erken durdurma (Early Stopping) ve öğrenme oranı azaltma (ReduceLROnPlateau) gibi callback fonksiyonları ile modelin eğitim süreci optimize edildi.
 
-Bu teknikler ve modeller, projemizin başarıyla tamamlanmasına yardımcı oldu ve görüntü sınıflandırma görevini etkili bir şekilde gerçekleştirdi.
+Bu teknikler ve modeller, projemin başarıyla tamamlanmasına yardımcı oldu ve görüntü sınıflandırma görevini etkili bir şekilde gerçekleştirildi.
 
 ### Veri Artırma (Data Augmentation)
 Aşağıdaki veri artırma teknikleri uygulanmıştır:
