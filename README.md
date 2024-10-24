@@ -42,3 +42,7 @@ Aşağıdaki veri artırma teknikleri uygulanmıştır:
 - Döndürme, kaydırma, kesme ve yakınlaştırma
 - Yatay çevirme
 - Piksel değerlerinin normalize edilmesi
+
+
+## Kaggle Notebook Linki
+[Notebook'a buradan ulaşabilirsiniz](https://www.kaggle.com/code/esnakfdan/es-nakf-danfish-ann-project/notebook).
